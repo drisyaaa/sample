@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table</title>
+    <style>
+      table{
+          border border-collapse: width: 50%;
+      }
+      th,td,{
+          text-align:left;
+          padding: 8px;
+      }
+      tr:nth-child(even){
+          background-color:lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: space-around">
+      <div>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>age</th>
+            <th>city</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>shahzad</td>
+            <td>Male</td>
+            <td>30</td>
+            <td>Lahore</td>
+            <td>update/remove</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>Male</td>
+            <td>34</td>
+            <td>Islamabad</td>
+            <td>update/remove</td>
+          </tr>
+          <tr>
+            <td>Sara</td>
+            <td>Female</td>
+            <td>34</td>
+            <td>Karachi</td>
+            <td>update/remove</td>
+          </tr>
+          <tr>
+            <td>Tahir</td>
+            <td>Male</td>
+            <td>38</td>
+            <td>Lahore</td>
+            <td>update/remove</td>
+          </tr>
+        </table>
+      </div>
+      <div class="PLACE">
+        <label>Name</label>
+        <input type="text" /><br />
+        <label>Gender</label>
+        <input type="radio" />
+        <label>Male</label>
+        <input type="radio" />
+        <label>Female</label><br />
+        <label>age</label>
+        <input type="number" /><br />
+        <label>city</label>
+        <input list="city" name="city" />
+        <datalist id="city">
+          <option value="Lahore"></option>
+          <option value="Islamabad"></option>
+          <option value="Karachi"></option>
+          <option value="Lahore"></option></datalist
+        ><br />
+        <input type="reset" />
+        <input type="submit" />
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  .PLACE {
+    border: 5px solid black;
+    margin: 10px;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+  }
+  label {
+    width: 140px;
+    display: inline-block;
+    margin: 0.3cm;
+    font-size: 16px;
+  }
+</style>
